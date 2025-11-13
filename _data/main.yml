@@ -1,12 +1,12 @@
-edition: 12th # conference edition
+edition: 13th # conference edition
 
 theme: International Conference
 
 # logo: escience-logo.png # conference logo (for menu in header bar / replaces theme)
 
-dates: Thursday, May 8, 2025 # conference dates
+dates: Monday, May 11, 2026 # conference dates
 
-location: Loyola University Chicago # conference location
+location: Northwestern University Chicago # conference location
 
 description: >
   The Greater Chicago Area Systems Research Workshop (GCASR) is a premier venue for the Chicago and Midwest systems research community. 
@@ -17,7 +17,7 @@ description: >
   computing, computer architecture, networks, databases, and security.
 
   <br /><br />
-  The meeting will be held in Loyola's Water Tower Place Campus, in Kasbeer Hall at the Corboy Law School building, 25 East Pearson, Chicago, IL 60611.
+  The meeting will be held in Northwestern's Evanston Campus, in the Louis Room.
   <br /><br />
 
 # visibility of contents in the website
@@ -26,18 +26,18 @@ contents:
     papers: false
     workshops: false
     tutorials: false
-    posters: true
+    posters: false
     speakers: false
   program:
     keynotes: false
     panel: false
     posters: true
     talks: false
-    timetable: true
+    timetable: false
     tutorials: false
     workshops: false
   meeting:
-    registration: true
+    registration: false
     venue: true
     virtual: false
     quickstart: false
