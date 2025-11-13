@@ -1,11 +1,3 @@
-- name: Loyola University Chicago
-  image: loyola.png
-  link: https://www.luc.edu/
-
-- name: University of Illinois Chicago
-  image: uic.png
-  link: https://uic.edu
-
 - name: The University of Chicago
   image: uchicago.png
   link: https://uchicago.edu
@@ -13,23 +5,3 @@
 - name: Northwestern University
   image: northwestern.png
   link: https://northwestern.edu/
-
-- name: Northern Illinois University
-  image: niu.png
-  link: https://niu.edu
-
-- name: DePaul University
-  image: depaul.png
-  link: https://depaul.edu
-
-- name: Discovery Partners Institute
-  image: dpi.png
-  link: https://dpi.uillinois.edu
-
-- name: Illinois Institute of Technology
-  image: illinois_tech.png
-  link: https://www.iit.edu/
-
-- name: National Science Foundation
-  image: NSF.png
-  link: https://www.nsf.gov/
