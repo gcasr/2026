@@ -1,6 +1,7 @@
 roles:
   - General Chairs
-
+  - Program Chairs
+  - Poster Chairs
 
 organizers:
   - name: Peter Dinda
@@ -8,8 +9,27 @@ organizers:
     institution: Northwestern University
     photo: dinda.jpg
 
-  - name: Andrew Crotty
+  - name: Kate Keahey
     role: General Chairs
+    institution: Argonne National Laboratory
+    photo: kate_keahey.png
+
+  - name: Andrew Crotty
+    role: Program Chairs
     institution: Northwestern University
     photo: crotty-andrew.jpg
 
+  - name: Rob Ross
+    role: Program Chairs
+    institution: Argonne National Laboratory
+    photo: rob_ross.jpg
+
+  - name: Nathaniel Hudson
+    role: Poster Chairs
+    institution: Illinois Institute of Technology
+    photo: nathaniel-hudson.jpg
+
+  - name: TaiNing Wang
+    role: Poster Chairs
+    institution: Loyola University Chicago
+    photo: taining-wang.jpg
