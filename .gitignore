@@ -1,3 +1,7 @@
+# macOS specific files
+.DS_Store
+
+Gemfile.lock
 .jekyll-cache
 .wakatime-project
 _site
