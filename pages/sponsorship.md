@@ -58,6 +58,9 @@ We also have the following sponsorship opportunities with naming rights, which w
   - 10 free registrations
   - Access to secondary shared meet-and-greet space
 
+## Opt-in Attendee List for Sponsors
+All attendees will be given the choice being visibility to sponsors.   For each individual sponsor, the attendee will be able to opt-in to visibility to that sponsor.   A list of opted-in attendees will then be made available to each sponsor, including contact information.
+
 ## Contacts
 Please contact the general co-chairs for more information and details for sponsorship:
 - Peter Dinda ([pdinda@northwestern.edu](mailto:pdinda@northwestern.edu))  [Northwestern University]
