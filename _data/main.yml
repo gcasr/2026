@@ -28,6 +28,7 @@ contents:
     tutorials: false
     posters: true
     speakers: false
+    reproducibility_hackathon: true
   program:
     keynotes: false
     panel: false
