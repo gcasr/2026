@@ -8,12 +8,12 @@ Below are the important dates/deadlines related to paritcipation in the reproduc
 
 | **Milestone** | **Date** |
 | --------------| -------- |
-| Application Deadline | April 4, 2026 |
-| Notification | April 6, 2026 |
-| Artifact packaging + video deadline | April 15, 2026 |
-| Peer review assignments distributed | April 15, 2026 | 
-| Peer reviews completed | April 20, 2026 | 
+| Application Deadline | April 10, 2026 |
+| Notification | April 13, 2026 |
+| Artifact packaging + video deadline | April 24, 2026 |
+| Peer review assignments distributed | April 24, 2026 |
 | Authors submit final artifact based on feedback | April 24, 2026 |
+| Peer reviews completed | April 30, 2026 | 
 | Presenter selection and notification | May 1, 2026 |
 | Event date | May 11, 2026 |
 
@@ -34,7 +34,7 @@ The **top 6** packages and presentations will be selected to present during a de
 
 ## How to Apply
 
-Submit the Google Form linked below by **April 4, 2026**. You will be asked to provide:
+Submit the Google Form linked below by **April 10, 2026**. You will be asked to provide:
 - Your name, institution, and contact information
 - A description of your experience with Chameleon
 - The title and conference of the paper you intend to package (your own recently published paper — limited to the last 3 years)
