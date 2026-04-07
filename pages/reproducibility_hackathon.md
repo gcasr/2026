@@ -12,9 +12,9 @@ Below are the important dates/deadlines related to paritcipation in the reproduc
 | Notification | April 13, 2026 |
 | Artifact packaging + video deadline | April 24, 2026 |
 | Peer review assignments distributed | April 24, 2026 |
-| Authors submit final artifact based on feedback | April 24, 2026 |
 | Peer reviews completed | April 30, 2026 | 
 | Presenter selection and notification | May 1, 2026 |
+| Authors submit final artifact based on feedback | May 7, 2026 |
 | Event date | May 11, 2026 |
 
 ## What's Involved
