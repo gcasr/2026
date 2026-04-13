@@ -2,6 +2,7 @@ The GCASR Workshop is a premier venue that promotes awareness, collaboration, an
 
 Faculty members, researchers, postdocs, students, and others with an interest in the workshop topics are invited to submit a poster for presentation at GCASR ‘26. We welcome posters that highlight theoretical and experimental work in computing systems—including benchmarking, theoretical results, applications, software design, algorithm/protocol design.
 
+<b>Note: Poster deadline has been extended by 1 week.</b>
 
 ### Submission
 
