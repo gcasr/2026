@@ -9,3 +9,19 @@
 - name: Chameleon Cloud
   image: chameleon.png
   link: https://www.chameleoncloud.org
+
+- name: Loyola University Chicago
+  image: loyola.png
+  link: https://www.luc.edu
+
+- name: Argonne National Laboratory
+  image: anl.png
+  link: https://www.anl.gov/
+
+- name: University of Illinois Chicago
+  image: uic.png
+  link: https://www.uic.edu/
+
+- name: DePaul University
+  image: depaul.png
+  link: https://www.depaul.edy/
