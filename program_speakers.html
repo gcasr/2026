@@ -1,0 +1,23 @@
+---
+layout: twitter
+permalink: /speakers
+title: Speakers
+---
+
+<p>Below is our current list of confirmed speakers for this year's GCASR:</p>
+
+{% assign timetable = site.data.timetable %}
+<ul>
+{% for t in timetable %} {% if t.speaker != "" %}
+  <li>
+    <b>
+      {% if t.web != "" and t.web != null %}
+        <a href="{{ t.web }}">{{ t.speaker }}</a>
+      {% else %}
+        {{ t.speaker }}
+      {% endif %}
+    </b> 
+    ({{ t.affiliation }})
+  </li>
+{% endif %} {% endfor %}
+</ul>

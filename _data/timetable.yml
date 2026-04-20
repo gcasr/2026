@@ -1,87 +1,192 @@
--   time: 8:15 AM - 8:45 AM
-    description: Light Breakfast & Coffee
+-   time: 8:55 AM - 9:00 AM
+    description: Welcome / Intro
     speaker: ''
     affiliation: ''
     isKeynote: false
--   time: 8:45 AM - 9:00 AM
-    description: Introduction
-    speaker: 'George Thiruvathukal and Bethany Lusch'
-    affiliation: ''
-    isKeynote: false
--   time: '9:00 AM - 10:00 AM'
-    description: Attacking Scientific Applications
-    speaker: 'Peter Dinda'
-    affiliation: 'Northwestern University'
+
+-   time: 9:00 AM - 9:45 AM
+    description: TITLE GOES HERE
+    speaker: ""
+    affiliation: ""
     isKeynote: true
--   time: 10:00 AM - 11:20 AM
+
+-   time: 9:45 AM - 11:30 AM
     description: |
-        <a href="posters#session-1"><b>Poster Session #1</b></a> <br/>
+        <a href="posters#session-1"><b>Poster Session #1 (Louis) and Hackathon (Scholars)</b></a> <br/>
 
         <small>(with Snacks, Drinks, & Coffee)</small> 
     speaker: ''
     affiliation: ''
     isKeynote: false
--   time: 11:20 AM - 11:40 AM
-    description: "Network Profiling in a Federated Research Testbed"
-    speaker: Nik Sultana
-    affiliation: IIT
+
+-   time: 11:30 AM - 12:45 PM
+    description: "Lunch"
+    speaker: "" 
+    affiliation: ""
     isKeynote: false
--   time: 11:40 AM - 12:00 PM
-    description: Efficient and Transparent Cross-Border Data Movement
-    speaker: Sanjay Krishnan
-    affiliation: UChicago
-    isKeynote: false
--   time: 12:00 PM - 12:20 PM
-    description: Navigating Dynamic Quantum System Noise with Context-aware Error Management
-    speaker: Kate Smith
+
+-   time: 12:45 PM - 1:00 PM
+    description: TITLE
+    speaker: Izzy Grosof
     affiliation: Northwestern
     isKeynote: false
--   time: 12:20 PM - 1:40 PM
-    description: Lunch
-    speaker: ''
-    affiliation: ''
+
+-   time: 1:00 PM - 1:15 PM
+    speaker: Kexin Pei
+    web: https://sites.google.com/site/kexinpeisite/
+    img: pei.jpg
+    bio: |
+        Kexin Pei is a Neubauer Family Assistant Professor at the Department of Computer Science, The University of Chicago. He received my PhD at Department of Computer Science, Columbia University. He is broadly interested in Security, Software Engineering, and Machine Learning, with a focus on automated code reasoning to improve the security and reliability of software systems. He gets most excited about developing intelligent systems that understand code semantics and can precisely reason about program behaviors, allowing them to reliably and efficiently analyze, detect, and fix software bugs and vulnerabilities.
+    description: |
+      <b>Synthesizing Fine-grained State Checks for Curriculum Fuzzing</b> <br/>
+    abstract: |
+      <p>Fuzzing enables many security applications, such as detecting vulnerabilities, confirming vulnerabilities by generating exploits, debugging system crashes and performance issues, and validating patches. While fuzzing essentially features a brute-force search, most research focuses on code reasoning to develop additional feedback that makes the search more efficient. For example, a typical feedback is code coverage, which serves as a proxy to measure progress towards reaching potential bugs, while being very easy to analyze and collect. However, such guidance is sometimes too sparse or indirect to reliably measure progress, especially when a long chain of implicit preconditions guards the specific bug. In contrast, more sophisticated feedbacks are often tailored for specific bug types and thus might not generalize to diverse bug types and programs.</p>
+
+      <p>In this talk, I'll introduce our recent effort in building a code agent to reason about semantically meaningful progress-capturing predicates as fine-grained, curriculum feedback to improve fuzzing efficiency. These predicates, inserted as source-level instrumentation into the program, provide semantically meaningful checkpoints that both prune unpromising executions and reward incremental progress. By shifting the LLM’s role from end-to-end input-level generation to local predicate synthesis, we reduce the long-range reasoning burden on the model, while enabling verifiable predicate synthesis via symbolic execution. We show that our system, Locus, substantially improves the efficiency of eight state-of-the-art fuzzers, achieving up to 41.6× speedup in reaching target sites and discovering new previously unknown bugs. We also demonstrate that the same philosophy can facilitate the synthesis of performance-stressing predicates, enabling efficient performance testing.</p>
+    affiliation: UChicago
     isKeynote: false
--   time: 1:40 PM - 2:00 PM
-    description: Toward Lightweight Cross-Architecture Process Migration
-    speaker: Xiaoguang Wang
+
+-   time: 1:15 PM - 1:30 PM
+    description: Scalable Video Conferencing using SDN Principles
+    speaker: Oliver Michel
+    web: https://olivermichel.github.io
+    img: michel.jpeg
+    bio: |
+      Oliver Michel is an Assistant Professor of Computer Science at the Illinois Institute of Technology. He received a Ph.D. in Computer Science from the University of Colorado Boulder, advised by Professor Eric Keller, and a B.Sc. in Computer Science from the University of Vienna. Prior to joining IIT, he was an Associate Research Scholar at Princeton University working with Professor Jennifer Rexford.  His research focuses on measuring and optimizing networks for emerging, low-latency, interactive networked applications, such as AR/VR and video conferencing. His measurement studies and system designs span the entire stack from rich, user-facing applications to the physical-layer intricacies of wireless access networks. Michel’s work has been published in top-tier venues, including SIGCOMM, NSDI, IMC, ATC, and HotNets.
+    abstract: |
+      Real-time communications applications such as video conferencing face an unwavering surge in traffic, stressing their underlying infrastructure in unprecedented ways. This work rethinks the key building block for conferencing infrastructures — selective forwarding units (SFUs). SFUs relay and adapt media streams between participants and, today, run in software on general-purpose servers. Our main insight, discerned from dissecting the operation of production SFU servers, is that SFUs largely mimic traditional packet-processing operations such as dropping and forwarding. Guided by this, we present Scallop, an SDN-inspired SFU that decouples video-conferencing applications into a hardware-based data plane for latency-sensitive and frequent media operations, and a software control plane for the (infrequent) remaining tasks, such as analyzing feedback signals and session management. Scallop is a general design that is suitable for a variety of hardware platforms, including programmable switches and SmartNICs. Our Tofino-based implementation fully supports WebRTC and delivers 7-422× improved scaling over a 32-core commodity server, while reaping performance improvements by cutting forwarding-induced latency by 26×.
+    affiliation: Illinois Tech
+    isKeynote: false
+
+-   time: 1:30 PM - 1:45 PM
+    description: TITLE
+    speaker: Austin Mordahl
     affiliation: UIC
     isKeynote: false
--   time: 2:00 PM - 2:20 PM
-    description: "Accelerating Discovery: Next-Generation Hardware for Scientific AI Workloads"
-    speaker: Varuni Sastry
-    affiliation: Argonne
-    isKeynote: false
--   time: 2:20 PM - 2:40 PM
-    description: Securing File Access with Compartmentalization
-    speaker: Alexander Rasin
-    affiliation: DePaul
-    isKeynote: false
--   time: 2:40 PM - 4:00 PM
-    description: |
-        <a href="posters#session-2"><b>Poster Session #2</b></a> <br/>
 
-        <small>(with Snacks, Drinks, & Coffee)</small> 
-    speaker: ''
-    affiliation: ''
-    isKeynote: false
--   time: 4:00 PM - 4:20 PM
-    description:  A Semantic-Aware Requirements Engineering Framework for AI-enabled Perception Systems
-    speaker: <a href="https://faculty.cs.niu.edu/~rahimi/">Mona Rahimi</a>
-    affiliation: Northern Illinois
-    isKeynote: false
--   time: 4:20 PM - 4:40 PM
-    description: Contagions & Confrontations&#58; Network Science Insights into COVID‑19 Literature and Cyberbullying
-    speaker: Satyaki Sikdar
+-   time: 1:45PM - 2:00 PM
+    description: TITLE
+    speaker: Mohammed Abuhamad
     affiliation: Loyola
     isKeynote: false
--   time: 4:40 PM - 5:00 PM
-    description: Emerging Hardware Acceleration for Fully Homomorphic Encryption
-    speaker: <a href=" https://zhouminxuan.github.io/">Minxuan Zhou</a>
-    affiliation: IIT
+
+-   time: 2:00 PM - 2:15 PM
+    description: Reliability-Aware Design and Optimization of Quantum Circuits on NISQ Devices
+    speaker: Jindi Wu
+    web: https://jindi0.github.io/
+    img: wu.jpeg
+    bio: |
+        Jindi Wu is an Assistant Professor in the School of Computing at DePaul University. Her research focuses on quantum computing and its intersections with machine learning, security, and privacy, with particular emphasis on quantum machine learning, error modeling and mitigation, circuit compilation, and quantum networks.
+    abstract: | 
+        Noisy Intermediate-Scale Quantum (NISQ) devices pose significant challenges for reliable quantum computation, making it difficult to design circuits that perform well under realistic noise and hardware constraints. A key limitation is the lack of efficient, accurate, and interpretable methods for estimating circuit reliability without relying on costly quantum execution. This talk presents a lightweight and scalable framework for reliability estimation in noisy quantum circuits. The approach models how noise accumulates and propagates throughout circuit execution, enabling efficient, state-independent evaluation of circuit robustness. Building on this capability, the talk highlights how reliability estimation can guide two important tasks. First, in quantum ansatz design, reliability-aware evaluation helps identify circuit structures that are more robust on noisy quantum hardware. Second, in circuit compilation and optimization, the framework enables more informed transformations that mitigate the impact of noise during execution.
+    affiliation: DePaul
     isKeynote: false
--   time: 5:00 PM - 5:15 PM
-    description: Closing Remarks
-    speaker: 
-    affiliation: 
+
+-   time: 2:45 PM - 3:00 PM
+    description: |
+      <b>Break</b> <br/>
+      <small>(Louis)</small>
+    speaker: "" 
+    affiliation: ""
     isKeynote: false
+
+-   time: 3:00 PM - 3:45 PM
+    description: |
+      <b>TITLE GOES HERE</b> <br/>
+      <small>(Louis)</small>
+    speaker: Dave Patterson
+    affiliation: "UC Berkeley"
+    isKeynote: true
+
+-   time: 3:45 PM - 4:00 PM
+    description: |
+      <b>Break</b> <br/>
+      <small>(Louis)</small>
+    speaker: "" 
+    affiliation: ""
+    isKeynote: false
+
+-   time: 4:00 PM - 4:15 PM
+    description: TITLE
+    speaker: Nicola Ferrier
+    affiliation: Argonne
+    isKeynote: false
+
+-   time: 4:15 PM - 4:30 PM
+    speaker: Matt Godbolt
+    web: https://www.linkedin.com/in/godbolt 
+    img: godbolt.jpg
+    description: "Performance Tuning - there's no such thing as the fastest code..."
+    bio: |
+      Matt Godbolt is the creator and primary maintainer of Compiler Explorer. A C++ developer based in Chicago, he works at Hudson River Trading and is one half of the Two's Complement podcast. His career has been a steady journey deeper into the machine: from writing rendering engines for video games to years of low-latency trading systems. His recent Advent of Compiler Optimisations series explored things compilers do that feel like magic.
+
+      When not hacking on Compiler Explorer, Matt likes to write emulators for the computers he grew up on, the ZX Spectrum, BBC Micro and Sega Master System.
+    abstract: |
+     When is code really fast enough? How can you tell? In finance we care about performance a lot, and in this talk Matt will show you that achieving low latency is an interesting, fun and sometimes surprising process.    
+    affiliation: Hudson River Trading 
+    isKeynote: false 
+
+-   time: 4:30 PM - 5:00 PM
+    description: TITLE 
+    speaker: Andy Pavlo
+    affiliation: Carnegie Mellon University 
+    isKeynote: false 
+
+-   time: 5:00 PM - 5:30 PM
+    description: "UpDown: Breaking through the ceiling on Graph Computing Performance"
+    speaker: Andrew Chien
+    bio: |
+      Andrew is an ACM Fellow (2004), IEEE Fellow (2006), AAAS Fellow (2007), and an NSF Young Investigator (1994). He has received numerous awards and recognitions for his research. He has served on the Advisory Committee for the NSF Computing, Information, Science and Engineering (CISE) Directorate, the NSF Office of Advanced Cyberinfrastructure (OAC), and on DARPA's Information Science and Technology (ISAT) study group. He served as Editor-in-Chief for Communications of the ACM (CACM) from 2017-2022, and served as Intel Vice President of Research from 2005-2010, and also on Advisory Boards of numerous Universities (Stanford, University of California - Berkeley, University of Washington, Ecole Polytechnique Federale Lausanne, University of Virginia), Government Agencies (National Science Foundation, Department of Energy), the Computing Research Association (CRA), and numerous companies (Intel, Samsung, Huawei, Lancium).
+    abstract: |
+      <p>Graph computations are challenging for programming and performance due to low data-reuse and irregular data, achieving poor performance on CPU’s and GPU’s.   The UpDown System radically improves both programmability and performance.  UpDown architecture enables fine-grained parallelism: 1-cycle thread creation and management, 1-cycle messages.  And, split-transaction DRAM access that unlocks the power of HBM’s massive memory bandwidth, under software control.  We will describe how UpDown’s KVMSR+UDWeave framework and global address space enables high-level programming of fine-grained parallelism.</p>
+
+      <p>UpDown performance on skewed-graph computations is 100x vs multicore CPU’s (single-node), and scales to 1,000 and 10,000-fold speedup on BFS, Pagerank, Triangle Count, K-truss and more.  Straightup GPU comparisons show 10-60x speedup.  Comparison to supercomputers show 10-1000x ISO-power performance advantages.</p>
+
+      <p>The UpDown system was created under IARPA’s AGILE program, and is being commercialized in a Chicago-based startup.  This startup is doing leading edge hardware design, including HBM and co-packaged optics with the goal of revolutionizing intelligence/graph analytics, network cybersecurity, financial fraud, and graphRAG + future AI/ML.</p>
+    affiliation: UChicago 
+    img: chien.jpeg
+    isKeynote: false 
+
+-   time: 5:30 PM - 6:00 PM
+    description: TITLE 
+    speaker: Bill Gropp 
+    affiliation: UIUC
+    isKeynote: false
+
+-   time: 6:10 - 6:15 PM
+    description: Closing Remarks 
+    speaker: ""
+    affiliation: ""
+    isKeynote: false
+
+    
+
+# -   time: 2:40 PM - 4:00 PM
+#     description: |
+#         <a href="posters#session-2"><b>Poster Session #2</b></a> <br/>
+#
+#         <small>(with Snacks, Drinks, & Coffee)</small> 
+#     speaker: ''
+#     affiliation: ''
+#     isKeynote: false
+# -   time: 4:00 PM - 4:20 PM
+#     description:  A Semantic-Aware Requirements Engineering Framework for AI-enabled Perception Systems
+#     speaker: <a href="https://faculty.cs.niu.edu/~rahimi/">Mona Rahimi</a>
+#     affiliation: Northern Illinois
+#     isKeynote: false
+# -   time: 4:20 PM - 4:40 PM
+#     description: Contagions & Confrontations&#58; Network Science Insights into COVID‑19 Literature and Cyberbullying
+#     speaker: Satyaki Sikdar
+#     affiliation: Loyola
+#     isKeynote: false
+# -   time: 4:40 PM - 5:00 PM
+#     description: Emerging Hardware Acceleration for Fully Homomorphic Encryption
+#     speaker: <a href=" https://zhouminxuan.github.io/">Minxuan Zhou</a>
+#     affiliation: IIT
+#     isKeynote: false
+# -   time: 5:00 PM - 5:15 PM
+#     description: Closing Remarks
+#     speaker: 
+#     affiliation: 
+#     isKeynote: false
 

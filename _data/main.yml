@@ -37,6 +37,7 @@ contents:
     timetable: false
     tutorials: false
     workshops: false
+    speakers: true
   meeting:
     registration: true
     venue: true
