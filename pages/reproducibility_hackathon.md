@@ -8,13 +8,13 @@ Below are the important dates/deadlines related to paritcipation in the reproduc
 
 | **Milestone** | **Date** |
 | --------------| -------- |
-| Application Deadline | April 10, 2026 |
-| Notification | April 13, 2026 |
-| Artifact packaging + video deadline | April 24, 2026 |
-| Peer review assignments distributed | April 24, 2026 |
-| Peer reviews completed | April 30, 2026 | 
-| Presenter selection and notification | May 1, 2026 |
-| Authors submit final artifact based on feedback | May 7, 2026 |
+| Application Deadline | April 29, 2026 |
+| Notification | April 30, 2026 |
+| Artifact packaging + video deadline | May 6, 2026 |
+| Peer review assignments distributed | May 6, 2026 |
+| Peer reviews completed | May 8, 2026 | 
+| Presenter selection and notification | May 8, 2026 |
+| Authors submit final artifact based on feedback | May 11, 2026 |
 | Event date | May 11, 2026 |
 
 ## What's Involved
