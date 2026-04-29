@@ -23,7 +23,7 @@ Selected participants (“reproducibility ambassadors”) will do the following.
 
 #### Before the conference
 
-1. Package their research: Take your experiment from a recently published CS paper (last 3 years) and package it for reproducibility on Chameleon using Trovi ([trovi.chameleoncloud.org](https://urldefense.com/v3/__https://gcasr.org/2026/trovi.chameleoncloud.org__;!!BpyFHLRN4TMTrA!4MEuNHgZMBx67Z6hPMxZVXaC9F0TzJRLqXVU2fNwMqU6heD2WZ82irRDh9veYStTAfWyWHGHFMaoelXKKvvcgeuRZUFjfSQ$)). Record a 2-minute video presenting your packaged experiment and reproducibility findings. See examples [here](https://urldefense.com/v3/__https://www.youtube.com/playlist?list=PLF3MJ-XNj1_8i6lyDlboJ7qyEhaPkf8O2__;!!BpyFHLRN4TMTrA!4MEuNHgZMBx67Z6hPMxZVXaC9F0TzJRLqXVU2fNwMqU6heD2WZ82irRDh9veYStTAfWyWHGHFMaoelXKKvvcgeuRVBkvk8Q$).
+1. Package their research: Take an experiment from a recently published CS paper (last 3 years) and package it for reproducibility on Chameleon using Trovi ([trovi.chameleoncloud.org](https://urldefense.com/v3/__https://gcasr.org/2026/trovi.chameleoncloud.org__;!!BpyFHLRN4TMTrA!4MEuNHgZMBx67Z6hPMxZVXaC9F0TzJRLqXVU2fNwMqU6heD2WZ82irRDh9veYStTAfWyWHGHFMaoelXKKvvcgeuRZUFjfSQ$)). Record a 2-minute video presenting your packaged experiment and reproducibility findings. See examples [here](https://urldefense.com/v3/__https://www.youtube.com/playlist?list=PLF3MJ-XNj1_8i6lyDlboJ7qyEhaPkf8O2__;!!BpyFHLRN4TMTrA!4MEuNHgZMBx67Z6hPMxZVXaC9F0TzJRLqXVU2fNwMqU6heD2WZ82irRDh9veYStTAfWyWHGHFMaoelXKKvvcgeuRVBkvk8Q$).
 2. Review others’ artifacts: Reproduce and review 1 packaged experiment from another participant, documenting findings and any challenges encountered.
 
 #### At the conference
