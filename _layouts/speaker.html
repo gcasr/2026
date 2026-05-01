@@ -29,7 +29,11 @@ permalink: /speaker
 
         {% if page.description != "" and page.description != nil %}
           <br><br>
-          <h3>Talk: &ldquo;{{ page.description }}&rdquo;</h3>
+          {% if page.keynote %}
+            <h3>Keynote: &ldquo;{{ page.description }}&rdquo;</h3>
+          {% else %}
+            <h3>Talk: &ldquo;{{ page.description }}&rdquo;</h3>
+          {% endif %}
           <p>
             <b>Abstract:</b> 
             {{ page.abstract }}
