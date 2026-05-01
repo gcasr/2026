@@ -22,9 +22,7 @@
 
 -   time: 10:00 AM - 11:45 AM
     description: |
-      <b>Posters and Reproducibility Hackathon</b>
-      <br/>
-      <small>(with Snacks, Drinks, & Coffee)</small>
+      <b>Posters</b>
     speaker: ''
     affiliation: ''
     isKeynote: false
@@ -108,6 +106,8 @@
 -   time: 2:45 PM - 3:00 PM
     description: |
       <b>Break</b>
+      <br/>
+      <small>(with Snacks, Drinks, & Coffee)</small>
     speaker: ""
     affiliation: ""
     isKeynote: false
