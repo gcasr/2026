@@ -1,10 +1,16 @@
--   time: 8:55 AM - 9:00 AM
+-   time: 8:15 AM - 8:50 AM
+    description: Breakfast
+    speaker: ''
+    affiliation: ''
+    isKeynote: false
+
+-   time: 8:50 AM - 9:00 AM
     description: Welcome / Intro
     speaker: ''
     affiliation: ''
     isKeynote: false
 
--   time: 9:00 AM - 9:45 AM
+-   time: 9:00 AM - 10:00 AM
     description: TBD
     speaker: Maurice Herlihy
     affiliation: Brown
@@ -14,22 +20,22 @@
     img: herlihy.jpg
     isKeynote: true
 
--   time: 9:45 AM - 11:30 AM
+-   time: 10:00 AM - 11:45 AM
     description: |
       <b>Posters and Reproducibility Hackathon</b>
       <br/>
-      <small>(with Snacks, Drinks, & Coffee)</small> 
+      <small>(with Snacks, Drinks, & Coffee)</small>
     speaker: ''
     affiliation: ''
     isKeynote: false
 
--   time: 11:30 AM - 12:45 PM
+-   time: 11:45 AM - 12:45 PM
     description: "Lunch"
-    speaker: "" 
+    speaker: ""
     affiliation: ""
     isKeynote: false
 
--   time: 12:45 PM - 1:00 PM
+-   time: 12:45 PM - 1:05 PM
     description: Scheduling with Massively Heterogeneous Resource Requirements
     speaker: Izzy Grosof
     web: https://isaacg1.github.io/
@@ -38,12 +44,12 @@
     abstract: |
       In modern computing systems, jobs resource requirements are massively heterogenous by default. Schedulers must allocate CPU, GPU, memory, and network resources, to name but a few. While some systems, such as cloud VM schedulers, allocate a handful of standardized resource bundles, many systems are flexible to exact user requirements, coping with the resulting heterogeneity. Existing queueing-theoretic performance analysis cannot handle this heterogeneity.
 
-      I will present a family of scheduling policies designed to cope with practical resource heterogeneity, with proven optimal throughput and low simulated latency on datacenter trace data. 
-    img: grosof.jpg 
+      I will present a family of scheduling policies designed to cope with practical resource heterogeneity, with proven optimal throughput and low simulated latency on datacenter trace data.
+    img: grosof.jpg
     affiliation: Northwestern
     isKeynote: false
 
--   time: 1:00 PM - 1:15 PM
+-   time: 1:05 PM - 1:25 PM
     speaker: Kexin Pei
     web: https://sites.google.com/site/kexinpeisite/
     img: pei.jpg
@@ -57,7 +63,7 @@
     affiliation: UChicago
     isKeynote: false
 
--   time: 1:15 PM - 1:30 PM
+-   time: 1:25 PM - 1:45 PM
     description: Scalable Video Conferencing using SDN Principles
     speaker: Oliver Michel
     web: https://olivermichel.github.io
@@ -69,7 +75,7 @@
     affiliation: Illinois Tech
     isKeynote: false
 
--   time: 1:30 PM - 1:45 PM
+-   time: 1:45 PM - 2:05 PM
     description: Improving Confidence in Static Analysis Tools via Metamorphic Testing
     speaker: Austin Mordahl
     affiliation: UIC
@@ -81,20 +87,20 @@
       Austin Mordahl is an Assistant Professor at the University of Illinois Chicago as of November 2024. His research interests are in software testing and program analysis. He has focused on transforming software quality assurance (SQA) processes (such as fuzzing and static analysis) to make them more accurate and accessible. His work has applied approaches like testing, static analysis, and machine learning towards this goal.
     isKeynote: false
 
--   time: 1:45PM - 2:00 PM
+-   time: 2:05PM - 2:25 PM
     description: TBD
     speaker: Mohammed Abuhamad
     affiliation: Loyola
     isKeynote: false
 
--   time: 2:00 PM - 2:15 PM
+-   time: 2:25 PM - 2:45 PM
     description: Reliability-Aware Design and Optimization of Quantum Circuits on NISQ Devices
     speaker: Jindi Wu
     web: https://jindi0.github.io/
     img: wu.jpeg
     bio: |
         Jindi Wu is an Assistant Professor in the School of Computing at DePaul University. Her research focuses on quantum computing and its intersections with machine learning, security, and privacy, with particular emphasis on quantum machine learning, error modeling and mitigation, circuit compilation, and quantum networks.
-    abstract: | 
+    abstract: |
         Noisy Intermediate-Scale Quantum (NISQ) devices pose significant challenges for reliable quantum computation, making it difficult to design circuits that perform well under realistic noise and hardware constraints. A key limitation is the lack of efficient, accurate, and interpretable methods for estimating circuit reliability without relying on costly quantum execution. This talk presents a lightweight and scalable framework for reliability estimation in noisy quantum circuits. The approach models how noise accumulates and propagates throughout circuit execution, enabling efficient, state-independent evaluation of circuit robustness. Building on this capability, the talk highlights how reliability estimation can guide two important tasks. First, in quantum ansatz design, reliability-aware evaluation helps identify circuit structures that are more robust on noisy quantum hardware. Second, in circuit compilation and optimization, the framework enables more informed transformations that mitigate the impact of noise during execution.
     affiliation: DePaul
     isKeynote: false
@@ -102,7 +108,7 @@
 -   time: 2:45 PM - 3:00 PM
     description: |
       <b>Break</b>
-    speaker: "" 
+    speaker: ""
     affiliation: ""
     isKeynote: false
 
@@ -115,20 +121,20 @@
 
 -   time: 3:45 PM - 4:00 PM
     description: |
-      <b>Break</b> 
-    speaker: "" 
+      <b>Break</b>
+    speaker: ""
     affiliation: ""
     isKeynote: false
 
--   time: 4:00 PM - 4:15 PM
+-   time: 4:00 PM - 4:20 PM
     description: TBD
     speaker: Nicola Ferrier
     affiliation: Argonne
     isKeynote: false
 
--   time: 4:15 PM - 4:30 PM
+-   time: 4:20 PM - 4:40 PM
     speaker: Matt Godbolt
-    web: https://www.linkedin.com/in/godbolt 
+    web: https://www.linkedin.com/in/godbolt
     img: godbolt.jpg
     description: "Performance Tuning - there's no such thing as the fastest code..."
     bio: |
@@ -136,17 +142,17 @@
 
       When not hacking on Compiler Explorer, Matt likes to write emulators for the computers he grew up on, the ZX Spectrum, BBC Micro and Sega Master System.
     abstract: |
-     When is code really fast enough? How can you tell? In finance we care about performance a lot, and in this talk Matt will show you that achieving low latency is an interesting, fun and sometimes surprising process.    
-    affiliation: Hudson River Trading 
-    isKeynote: false 
+     When is code really fast enough? How can you tell? In finance we care about performance a lot, and in this talk Matt will show you that achieving low latency is an interesting, fun and sometimes surprising process.
+    affiliation: Hudson River Trading
+    isKeynote: false
 
--   time: 4:30 PM - 5:00 PM
-    description: TBD 
+-   time: 4:40 PM - 5:10 PM
+    description: TBD
     speaker: Andy Pavlo
-    affiliation: Carnegie Mellon University 
-    isKeynote: false 
+    affiliation: Carnegie Mellon University
+    isKeynote: false
 
--   time: 5:00 PM - 5:30 PM
+-   time: 5:10 PM - 5:40 PM
     description: "UpDown: Breaking through the ceiling on Graph Computing Performance"
     speaker: Andrew Chien
     bio: |
@@ -157,13 +163,13 @@
       <p>UpDown performance on skewed-graph computations is 100x vs multicore CPU’s (single-node), and scales to 1,000 and 10,000-fold speedup on BFS, Pagerank, Triangle Count, K-truss and more.  Straightup GPU comparisons show 10-60x speedup.  Comparison to supercomputers show 10-1000x ISO-power performance advantages.</p>
 
       <p>The UpDown system was created under IARPA’s AGILE program, and is being commercialized in a Chicago-based startup.  This startup is doing leading edge hardware design, including HBM and co-packaged optics with the goal of revolutionizing intelligence/graph analytics, network cybersecurity, financial fraud, and graphRAG + future AI/ML.</p>
-    affiliation: UChicago 
+    affiliation: UChicago
     img: chien.jpeg
     web: http://people.cs.uchicago.edu/~aachien/lssg/people/andrew-chien/
-    isKeynote: false 
+    isKeynote: false
 
--   time: 5:30 PM - 6:00 PM
-    speaker: Bill Gropp 
+-   time: 5:40 PM - 6:10 PM
+    speaker: Bill Gropp
     description: Performance Engineering for Parallel Systems
     abstract: |
         The end of Dennard or frequency scaling in computer processors nearly twenty years ago has caused a transformation in computing. Innovations in computer architecture have enabled continued improvements in performance, but at the cost of increasing software and algorithmic complexity. Software has also undergone major transformations, making it both easier and harder to exploit the changes in hardware. This talk will provide some background on the transformations in computing over the last two decades and discuss how performance engineering can help guide the developments of algorithms and applications in this rapidly changing environment. I will close with several challenges for system software developers.
@@ -174,40 +180,8 @@
     img: gropp.jpg
     isKeynote: false
 
--   time: 6:10 - 6:15 PM
-    description: Closing Remarks 
+-   time: 6:10 - 6:20 PM
+    description: Closing Remarks
     speaker: ""
     affiliation: ""
     isKeynote: false
-
-    
-
-# -   time: 2:40 PM - 4:00 PM
-#     description: |
-#         <a href="posters#session-2"><b>Poster Session #2</b></a> <br/>
-#
-#         <small>(with Snacks, Drinks, & Coffee)</small> 
-#     speaker: ''
-#     affiliation: ''
-#     isKeynote: false
-# -   time: 4:00 PM - 4:20 PM
-#     description:  A Semantic-Aware Requirements Engineering Framework for AI-enabled Perception Systems
-#     speaker: <a href="https://faculty.cs.niu.edu/~rahimi/">Mona Rahimi</a>
-#     affiliation: Northern Illinois
-#     isKeynote: false
-# -   time: 4:20 PM - 4:40 PM
-#     description: Contagions & Confrontations&#58; Network Science Insights into COVID‑19 Literature and Cyberbullying
-#     speaker: Satyaki Sikdar
-#     affiliation: Loyola
-#     isKeynote: false
-# -   time: 4:40 PM - 5:00 PM
-#     description: Emerging Hardware Acceleration for Fully Homomorphic Encryption
-#     speaker: <a href=" https://zhouminxuan.github.io/">Minxuan Zhou</a>
-#     affiliation: IIT
-#     isKeynote: false
-# -   time: 5:00 PM - 5:15 PM
-#     description: Closing Remarks
-#     speaker: 
-#     affiliation: 
-#     isKeynote: false
-
