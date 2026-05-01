@@ -36,27 +36,31 @@ title: Timetable
   {% assign timetable = site.data.timetable %}
   <tbody>
     {% for t in timetable %}
+    {% assign speakerSurname = t.speaker | split: " " | last | downcase %}
+    
     <tr>
-      {% if t.isKeynote %}
-      <td>{{ t.time }}</td>
-      <td>
-        {% assign keynote = keynote | plus: 1 %}
-        <a href="keynotes"><b>Keynote: </b></a>
-        <br />
-        {{ t.description }}
-      </td>
-      <td>{{ t.speaker }}</td>
-      <td>{{ t.affiliation }}</td>
-      {% elsif t.speaker != "" %}
-      <td>{{ t.time }}</td>
-      <td>{{ t.description }}</td>
-      <td>{{ t.speaker }}</td>
-      <td>{{ t.affiliation }}</td>
+      {% if t.speaker != "" %}
+        <td>
+          {{ t.time }}
+        </td>
+        <td>
+          {% if t.isKeynote %}
+            <b>Keynote:</b> 
+          {% endif %}
+          <a href="{{ site.baseurl }}/speakers/{{ speakerSurname }}">{{ t.description }}</a>
+        </td>
+        <td>
+          {{ t.speaker }}
+        </td>
+        <td>
+          {{ t.affiliation }}
+        </td>
       {% else %}
-      <td>{{ t.time }}</td>
-      <td colspan="3">{{ t.description }}</td>
+        <td>{{ t.time }}</td>
+        <td colspan="3">{{ t.description }}</td>
       {% endif %}
     </tr>
+
     {% endfor %}
   </tbody>
 </table>

@@ -1,0 +1,45 @@
+---
+layout: page
+permalink: /speaker
+---
+
+<div class="col-sm-3 col-md-2" style="text-align: center;">
+    <img 
+        src="{{ 'images/speakers/' | append:  page.img | relative_url}}" 
+        alt="{{ page.name }}"
+        class="img-responsive img-circle center-block"
+        style="border-style: solid; border-color: #401f68; border-width: 3px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); max-width: 140px;"
+    >
+    <p style="margin-top: 10px;"><a href="{{ page.web }}">
+      <i class="fas fa-link"></i> 
+      Web
+    </a></p>
+</div>
+
+<div class="col-sm-9 col-md-7">
+    <article class="speaker-profile">
+        
+        <h2>Biography</h2>
+        <p class="bio">{{ page.bio }}</p>
+
+        {% if page.affil_img != nil and page.affil_img != "" %}
+          <br>
+          <img src="{{ site.baseurl }}/images/sponsors/{{ page.affil_img }}" class="img-responsive">
+        {% endif %}
+
+        {% if page.description != "" and page.description != nil %}
+          <br><br>
+          <h3>Talk: &ldquo;{{ page.description }}&rdquo;</h3>
+          <p>
+            <b>Abstract:</b> 
+            {{ page.abstract }}
+          </p>
+
+        {% endif %}
+
+    </article>
+</div>
+
+<div class="col-sm-12 col-md-3">
+    {% include twitter.html %}
+</div>

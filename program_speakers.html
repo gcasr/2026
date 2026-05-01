@@ -9,10 +9,12 @@ title: Speakers
 {% assign timetable = site.data.timetable %}
 <ul>
 {% for t in timetable %} {% if t.speaker != "" %}
+  {% assign speakerSurname = t.speaker | split: " " | last | downcase %}
+  {% assign tURL = "{{ site.baseurl }}/speakers/{{ speakerSurname }}" %}
   <li>
     <b>
       {% if t.web != "" and t.web != null %}
-        <a href="{{ t.web }}">{{ t.speaker }}</a>
+        <a href="{{ site.baseurl }}/speakers/{{ speakerSurname }}">{{ t.speaker }}</a>
       {% else %}
         {{ t.speaker }}
       {% endif %}

@@ -5,16 +5,20 @@
     isKeynote: false
 
 -   time: 9:00 AM - 9:45 AM
-    description: TITLE GOES HERE
-    speaker: ""
-    affiliation: ""
+    description: TBD
+    speaker: Maurice Herlihy
+    affiliation: Brown
+    bio: |
+      Maurice Herlihy has an A.B. in Mathematics from Harvard University, and a Ph.D. in Computer Science from M.I.T. He has served on the faculty of Carnegie Mellon University and the staff of DEC Cambridge Research Lab. He is the recipient of the 2003 Dijkstra Prize in Distributed Computing, the 2004 Gödel Prize in theoretical computer science, the 2008 ISCA influential paper award, the 2012 Edsger W. Dijkstra Prize, and the 2013 Wallace McDowell award. He received a 2012 Fulbright Distinguished Chair in the Natural Sciences and Engineering Lecturing Fellowship, and he is fellow of the ACM, a fellow of the National Academy of Inventors, the National Academy of Engineering, and the National Academy of Arts and Sciences. In 2022, he won his third Dijkstra Prize.Between 2022 and 2025, he was appointed Fellow-Ambassadeur of the Centre national de recherece scientifique (CNRS) in France. In 2025, he received honorary doctorates from the Università della Svizzera italiana, and from Technion (Israel Institute of Technology).Between 2022 and 2025, he was appointed Fellow-Ambassadeur of the Centre national de la recherche scientifique (CNRS) in France. In 2025, he received honorary doctorates from the Università della Svizzera italiana, and from the Technion (Israel Institute of Technology).
+    web: https://cs.brown.edu/people/mph/
+    img: herlihy.jpg
     isKeynote: true
 
 -   time: 9:45 AM - 11:30 AM
     description: |
-        <a href="posters#session-1"><b>Poster Session #1 (Louis) and Hackathon (Scholars)</b></a> <br/>
-
-        <small>(with Snacks, Drinks, & Coffee)</small> 
+      <b>Posters and Reproducibility Hackathon</b>
+      <br/>
+      <small>(with Snacks, Drinks, & Coffee)</small> 
     speaker: ''
     affiliation: ''
     isKeynote: false
@@ -26,8 +30,16 @@
     isKeynote: false
 
 -   time: 12:45 PM - 1:00 PM
-    description: TITLE
+    description: Scheduling with Massively Heterogeneous Resource Requirements
     speaker: Izzy Grosof
+    web: https://isaacg1.github.io/
+    bio: |
+      Izzy Grosof is an assistant professor at Northwestern University, in Industrial Engineering. They study stochastic queueing theory, with a focus on scheduling and resource allocation. Their research has received Best Paper awards from INFORMS,ACM SIGMETRICS and IFIP Performance.
+    abstract: |
+      In modern computing systems, jobs resource requirements are massively heterogenous by default. Schedulers must allocate CPU, GPU, memory, and network resources, to name but a few. While some systems, such as cloud VM schedulers, allocate a handful of standardized resource bundles, many systems are flexible to exact user requirements, coping with the resulting heterogeneity. Existing queueing-theoretic performance analysis cannot handle this heterogeneity.
+
+      I will present a family of scheduling policies designed to cope with practical resource heterogeneity, with proven optimal throughput and low simulated latency on datacenter trace data. 
+    img: grosof.jpg 
     affiliation: Northwestern
     isKeynote: false
 
@@ -37,10 +49,9 @@
     img: pei.jpg
     bio: |
         Kexin Pei is a Neubauer Family Assistant Professor at the Department of Computer Science, The University of Chicago. He received my PhD at Department of Computer Science, Columbia University. He is broadly interested in Security, Software Engineering, and Machine Learning, with a focus on automated code reasoning to improve the security and reliability of software systems. He gets most excited about developing intelligent systems that understand code semantics and can precisely reason about program behaviors, allowing them to reliably and efficiently analyze, detect, and fix software bugs and vulnerabilities.
-    description: |
-      <b>Synthesizing Fine-grained State Checks for Curriculum Fuzzing</b> <br/>
+    description: Synthesizing Fine-grained State Checks for Curriculum Fuzzing
     abstract: |
-      <p>Fuzzing enables many security applications, such as detecting vulnerabilities, confirming vulnerabilities by generating exploits, debugging system crashes and performance issues, and validating patches. While fuzzing essentially features a brute-force search, most research focuses on code reasoning to develop additional feedback that makes the search more efficient. For example, a typical feedback is code coverage, which serves as a proxy to measure progress towards reaching potential bugs, while being very easy to analyze and collect. However, such guidance is sometimes too sparse or indirect to reliably measure progress, especially when a long chain of implicit preconditions guards the specific bug. In contrast, more sophisticated feedbacks are often tailored for specific bug types and thus might not generalize to diverse bug types and programs.</p>
+      Fuzzing enables many security applications, such as detecting vulnerabilities, confirming vulnerabilities by generating exploits, debugging system crashes and performance issues, and validating patches. While fuzzing essentially features a brute-force search, most research focuses on code reasoning to develop additional feedback that makes the search more efficient. For example, a typical feedback is code coverage, which serves as a proxy to measure progress towards reaching potential bugs, while being very easy to analyze and collect. However, such guidance is sometimes too sparse or indirect to reliably measure progress, especially when a long chain of implicit preconditions guards the specific bug. In contrast, more sophisticated feedbacks are often tailored for specific bug types and thus might not generalize to diverse bug types and programs.
 
       <p>In this talk, I'll introduce our recent effort in building a code agent to reason about semantically meaningful progress-capturing predicates as fine-grained, curriculum feedback to improve fuzzing efficiency. These predicates, inserted as source-level instrumentation into the program, provide semantically meaningful checkpoints that both prune unpromising executions and reward incremental progress. By shifting the LLM’s role from end-to-end input-level generation to local predicate synthesis, we reduce the long-range reasoning burden on the model, while enabling verifiable predicate synthesis via symbolic execution. We show that our system, Locus, substantially improves the efficiency of eight state-of-the-art fuzzers, achieving up to 41.6× speedup in reaching target sites and discovering new previously unknown bugs. We also demonstrate that the same philosophy can facilitate the synthesis of performance-stressing predicates, enabling efficient performance testing.</p>
     affiliation: UChicago
@@ -59,13 +70,19 @@
     isKeynote: false
 
 -   time: 1:30 PM - 1:45 PM
-    description: TITLE
+    description: Improving Confidence in Static Analysis Tools via Metamorphic Testing
     speaker: Austin Mordahl
     affiliation: UIC
+    img: mordahl.jpg
+    web: https://www.cs.uic.edu/~amordahl
+    abstract: |
+      As software gets larger and more complex, it becomes more and more important to thoroughly verify that it is free from critical errors. Static analysis tools are well-suited to this task, but as complex pieces of software themselves, they may have bugs that compromise the accuracy and reliability of the results. These tools are difficult to test because of the oracle problem, i.e., it is difficult to determine what the correct output of a static analysis for a non-trivial program should be. Metamorphic testing has emerged as a common approach to overcome the oracle problem. In metamorphic testing, related inputs are fed to the software under test, with the expectation that there should be some observable relation between the outputs. In this talk, we will explore approaches to metamorphic testing of static analysis tools, in order to find bugs and ultimately make these tools more reliable and correct.
+    bio: |
+      Austin Mordahl is an Assistant Professor at the University of Illinois Chicago as of November 2024. His research interests are in software testing and program analysis. He has focused on transforming software quality assurance (SQA) processes (such as fuzzing and static analysis) to make them more accurate and accessible. His work has applied approaches like testing, static analysis, and machine learning towards this goal.
     isKeynote: false
 
 -   time: 1:45PM - 2:00 PM
-    description: TITLE
+    description: TBD
     speaker: Mohammed Abuhamad
     affiliation: Loyola
     isKeynote: false
@@ -84,30 +101,27 @@
 
 -   time: 2:45 PM - 3:00 PM
     description: |
-      <b>Break</b> <br/>
-      <small>(Louis)</small>
+      <b>Break</b>
     speaker: "" 
     affiliation: ""
     isKeynote: false
 
 -   time: 3:00 PM - 3:45 PM
     description: |
-      <b>TITLE GOES HERE</b> <br/>
-      <small>(Louis)</small>
+      TBD
     speaker: Dave Patterson
     affiliation: Google
     isKeynote: true
 
 -   time: 3:45 PM - 4:00 PM
     description: |
-      <b>Break</b> <br/>
-      <small>(Louis)</small>
+      <b>Break</b> 
     speaker: "" 
     affiliation: ""
     isKeynote: false
 
 -   time: 4:00 PM - 4:15 PM
-    description: TITLE
+    description: TBD
     speaker: Nicola Ferrier
     affiliation: Argonne
     isKeynote: false
@@ -127,7 +141,7 @@
     isKeynote: false 
 
 -   time: 4:30 PM - 5:00 PM
-    description: TITLE 
+    description: TBD 
     speaker: Andy Pavlo
     affiliation: Carnegie Mellon University 
     isKeynote: false 
@@ -145,12 +159,19 @@
       <p>The UpDown system was created under IARPA’s AGILE program, and is being commercialized in a Chicago-based startup.  This startup is doing leading edge hardware design, including HBM and co-packaged optics with the goal of revolutionizing intelligence/graph analytics, network cybersecurity, financial fraud, and graphRAG + future AI/ML.</p>
     affiliation: UChicago 
     img: chien.jpeg
+    web: http://people.cs.uchicago.edu/~aachien/lssg/people/andrew-chien/
     isKeynote: false 
 
 -   time: 5:30 PM - 6:00 PM
-    description: TITLE 
     speaker: Bill Gropp 
+    description: Performance Engineering for Parallel Systems
+    abstract: |
+        The end of Dennard or frequency scaling in computer processors nearly twenty years ago has caused a transformation in computing. Innovations in computer architecture have enabled continued improvements in performance, but at the cost of increasing software and algorithmic complexity. Software has also undergone major transformations, making it both easier and harder to exploit the changes in hardware. This talk will provide some background on the transformations in computing over the last two decades and discuss how performance engineering can help guide the developments of algorithms and applications in this rapidly changing environment. I will close with several challenges for system software developers.
+    bio: |
+        William Gropp is a professor in the Siebel School of Computing and Data Science at the University of Illinois Urbana‑Champaign, where he holds a Grainger Distinguished Chair in Engineering. He earned his Ph.D. in Computer Science from Stanford University and previously held positions at Yale University and Argonne National Laboratory. Gropp’s research spans parallel computing, scientific software, and numerical methods for partial differential equations, with influential contributions to widely used HPC software and standards. From 2016 to 2025, he served as Director of the National Center for Supercomputing Applications. He now chairs the Computing Community Consortium for the Computing Research Association. He is a Fellow of AAAS, ACM, IEEE, and SIAM, a member of the National Academy of Engineering, and a recipient of multiple major awards in high‑performance computing.
     affiliation: UIUC
+    web: https://wgropp.cs.illinois.edu/
+    img: gropp.jpg
     isKeynote: false
 
 -   time: 6:10 - 6:15 PM
