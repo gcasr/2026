@@ -13,11 +13,9 @@ title: Speakers
   {% assign tURL = "{{ site.baseurl }}/speakers/{{ speakerSurname }}" %}
   <li>
     <b>
-      {% if t.web != "" and t.web != null %}
-        <a href="{{ site.baseurl }}/speakers/{{ speakerSurname }}">{{ t.speaker }}</a>
-      {% else %}
+      <a href="{{ site.baseurl }}/speakers/{{ speakerSurname }}">
         {{ t.speaker }}
-      {% endif %}
+      </a>
     </b> 
     ({{ t.affiliation }})
   </li>
