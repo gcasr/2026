@@ -8,7 +8,7 @@ abstract: |
 
     I will present a family of scheduling policies designed to cope with practical resource heterogeneity, with proven optimal throughput and low simulated latency on datacenter trace data. 
 bio: |
-    Austin Mordahl is an Assistant Professor at the University of Illinois Chicago as of November 2024. His research interests are in software testing and program analysis. He has focused on transforming software quality assurance (SQA) processes (such as fuzzing and static analysis) to make them more accurate and accessible. His work has applied approaches like testing, static analysis, and machine learning towards this goal.
+    Izzy Grosof is an assistant professor at Northwestern University, in Industrial Engineering. They study stochastic queueing theory, with a focus on scheduling and resource allocation. Their research has received Best Paper awards from INFORMS, ACM SIGMETRICS and IFIP Performance.
 web: https://isaacg1.github.io/
 img: grosof.jpg
 affil_img: northwestern.png
