@@ -21,6 +21,14 @@ permalink: /
                 <h1>{{ site.data.main.dates }}</h1>
                 <h2>{{ site.data.main.location }}</h2>
                 <p>{{ site.data.main.description }}</p>
+
+                <!-- 
+                  Including this here (and not in `site.data.main`) is not ideal.
+                  But it was simplest solution it let Liquid render correctly. 
+                  Feel free to remove in future iterations.
+                -->
+                <b>The meeting will be held in Northwestern's Evanston Campus, in the <a href="{{ site.baseurl }}/venue">Norris University Center at Northwestern</a>.</b>
+  <br /><br />
             </div>
         </div>
 
