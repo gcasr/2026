@@ -501,35 +501,6 @@
   room: Lake
   session: 1
   title: 'Contour: Elevating Scientific Applications to Scalable Workflows'
-- abstract: 'Modern blockchains struggle to scale - Bitcoin processes roughly 6 transactions
-    per second while Visa handles thousands. Sharding, which splits transaction processing
-    across parallel groups of validators, is the most promising path forward. NEAR
-    Protocol''s Nightshade sharding design claims to achieve up to one million transactions
-    per second, but how well do the simulations that inform such designs actually
-    reflect reality?
-
-    This poster presents an ongoing effort to find out. We take a validated discrete-event
-    sharding simulator modeled after NEAR''s Nightshade architecture and put its predictions
-    to the test by running real sharding experiments on Chameleon Cloud, a bare-metal
-    testbed, adapting NEAR''s one-million-TPS benchmark harness from its original
-    GCP infrastructure to a scaled-down but representative Chameleon configuration.
-
-    By instrumenting both systems for the same core metrics including throughput,
-    confirmation latency, and coordination overhead, we can directly measure the gap
-    between what the simulation predicts and what real hardware delivers, and interrogate
-    what that gap says about the assumptions sharding models rely on.
-
-    The broader implication is what makes this work matter: if simulations systematically
-    misrepresent sharding performance, the field needs to know. If they hold up, they
-    become a powerful and accessible tool for guiding protocol design decisions without
-    depending on commercial cloud deployments.'
-  authors: Om Amith Gandhi, Sohini Sahukar, Dr. Ioan Raicu
-  board_number: L7
-  institution: Illinois Institute of Technology
-  number: 22
-  room: Lake
-  session: 1
-  title: 'Shards on a Shoestring: Putting Blockchain Sharding Simulations to the Test'
 - abstract: 'Large Language Models (LLMs) have become a critical part of broad workflows.
     Increasingly, users use many LLMs in their work, ranging from small to large models,
     fine-tuned on different corpora, and optimized for different use cases. As such,
@@ -1211,39 +1182,6 @@
   session: 1
   title: What Do AI Coding Agents Need? Mining Trajectories to Identify Gaps in Language
     Tooling
-- abstract: 'Operating system performance depends critically on kernel policy
-
-    choices, yet these policies are typically selected statically despite
-
-    dynamic and heterogeneous workloads. While an agent managing
-
-    an operating system can observe the outcome of the policy it applies,
-
-    it fundamentally lacks access to counterfactual feedback - how
-
-    alternative kernel policies would have behaved under the same
-
-    workload without risking system stability.
-
-    We present pMVX, a framework for adaptive kernel policy selection based on policy-level
-    multi-version execution. pMVX evaluates multiple kernel policy variants concurrently
-    across isolated OS instances executing identical workloads, enabling empirical
-
-    comparison without impacting production systems. The resulting
-
-    observations are distilled into a lightweight mapping from eBPF derived workload
-    characteristics to effective policies, which guides
-
-    safe runtime policy selection. We instantiate pMVX with a self tuning Linux scheduler
-    built on top of sched_ext, and show that it improves performance over static schedulers
-    across a range of scheduling-sensitive workloads.'
-  authors: Sujot Singh, Chalmers Phua, Kenan Alghythee, Xiaoguang Wang
-  board_number: N11
-  institution: University of Illinois Chicago
-  number: 31
-  room: Northwestern
-  session: 1
-  title: 'pMVX: Policy-Level Multi-Version Execution for Agentic OS Kernel Self-Tuning'
 - abstract: 'Since the advent of ChatGPT in late 2022, LLMs have become ubiquitous
     in academic settings. Several recent papers have investigated the increase in
     LLM use in scientific papers since 2022, finding a broad and increasing presence
@@ -1670,34 +1608,6 @@
   room: Northwestern
   session: 1
   title: Scalable and Interactive Visualization for Out-of-Distribution Data
-- abstract: "Recent work has shown that implicit neural representations (INRs) can\
-    \ be trained to effectively compress structured and unstructured volume data,\
-    \ allowing for direct data querying with a reduced memory footprint. However,\
-    \ as existing INRs for unstructured volumes do not encode geometry, they require\
-    \ partial mesh storage for later sampling, limiting achievable compression. At\
-    \ the same time, novel view synthesis methods have shown that explicit collections\
-    \ of 3D Gaussians can be used to accurately visualize volume data. In this work,\
-    \ we introduce an explicit model for volume data compression based on 3D Gaussian\
-    \ primitives. We reinterpret collections of 3D Gaussians as an explicit representation\
-    \ of a volume\u2019s scalar field and use a sampling strategy that reconstructs\
-    \ scalar values at spatial locations through weighted aggregation of intersecting\
-    \ Gaussians. We develop optimized CUDA-accelerated pipelines for structured and\
-    \ unstructured model sampling, loss functions that encourage accurate domain encoding\
-    \ by our models, and a novel sampling-error based densification strategy. Our\
-    \ explicit formulation naturally encodes domain geometry, eliminating the need\
-    \ for mesh storage in unstructured volumes and introducing significantly higher\
-    \ compression opportunities. Compared to existing INRs, we demonstrate that our\
-    \ explicit model achieves competitive reconstruction quality with significant\
-    \ training speedups on structured volumes, while markedly outperforming in all\
-    \ metrics on unstructured volumes."
-  authors: Landon Dyken, Sidharth Kumar
-  board_number: N29
-  institution: University of Illinois Chicago
-  number: 71
-  room: Northwestern
-  session: 1
-  title: Efficient Compression of Structured and Unstructured Volumes via Learned
-    3D Gaussian Representation
 - abstract: Improving the reliability of artificial intelligence systems is essential
     for their adoption in scientific discovery and large-scale domain workflows. In
     collaboration with domain scientists working on AI and machine learning pipelines
@@ -2521,33 +2431,6 @@
   room: Lake
   session: 2
   title: Everything You Think You Know About Compiled and Vectorized Queries Is Wrong
-- abstract: "Modern AI coding agents are capable of software development tasks ranging\
-    \ from large greenfield projects to low-level optimizations in production-quality\
-    \ codebases. However, these agents are computationally expensive and require specialized\
-    \ hardware that typically must be accessed from cloud providers, making token\
-    \ efficiency important. A necessary step toward token efficiency is to offload\
-    \ work to traditional language tooling\u2014such as compilers, linters, and static\
-    \ analyzers\u2014yet this tooling was never designed with AI agents in mind.\n\
-    There is currently no systematic method for identifying where existing tools fail\
-    \ these agents and how they should be extended. In this work, we propose a workflow\
-    \ that applies statistical analysis and LLM-as-a-judge to agent trajectories (the\
-    \ reasoning and actions taken when solving a problem) to automatically identify\
-    \ these gaps, reducing the need for labor-intensive manual analysis. Applying\
-    \ this workflow to Python coding agents, we find that agents manually implement\
-    \ common program analyses such as program slicing, and get stuck in loops when\
-    \ resolving complex import errors. Both findings indicate absent or inadequate\
-    \ tooling support, and our workflow prescribes targeted extensions to Python's\
-    \ tooling ecosystem for agent workflows. With this methodology, programming language\
-    \ implementers, toolchain designers, and agent framework developers can evaluate\
-    \ and extend their tools to better support AI coding agents."
-  authors: Tommy McMichen
-  board_number: L7
-  institution: Northwestern University
-  number: 105
-  room: Lake
-  session: 2
-  title: What Do AI Coding Agents Need? Mining Trajectories to Identify Gaps in Language
-    Tooling
 - abstract: 'The ATLAS project is adopting container technologies to improve workflow
     portability and reproducibility. However, this causes concern about I/O performance
     in derivation workflows on HPC systems, where inefficient I/O can affect both
@@ -2601,43 +2484,6 @@
   room: Lake
   session: 2
   title: 'UpDown: Efficient Manycore based on Many Threading and Scalable Memory Parallelism'
-- abstract: 'The ATLAS project is adopting container technologies to improve workflow
-
-    portability and reproducibility. However, this causes concern about I/O perfor-
-
-    mance in derivation workflows on HPC systems, where inefficient I/O can affect
-
-    both ATLAS and other users.
-
-    To enable reliable production deployment on HPC resources, we system-
-
-    atically study I/O behavior in ATLAS derivations across container runtimes
-
-    supported by ATLAS, including Podman, Shifter, and Apptainer, and com-
-
-    pare them against native execution. We conduct experiments on both CERN
-
-    computing resources and the Perlmutter supercomputer at NERSC.
-
-    Our study finds that containerization can generate distinct, runtime-dependent
-
-    I/O performance differences in ATLAS derivations, particularly related to shared
-
-    file system scalability and bottlenecks. We identify which container runtimes
-
-    degrade or maintain I/O efficiency when compared to native execution. These
-
-    outcomes provide practical guidance for deploying ATLAS derivations on HPC
-
-    systems to secure efficient and fair use of shared storage infrastructure.'
-  authors: Wesley Kwiecinski
-  board_number: L10
-  institution: University of Illinois Chicago
-  number: 112
-  room: Lake
-  session: 2
-  title: Evaluating I/O Behavior of ATLAS Derivations Across Container Runtimes on
-    HPC Platforms
 - abstract: 'TLA+ has supported industrial verification at companies such as Amazon
     and Microsoft, yet writing correct TLA+ specifications from natural language still
     requires time and expertise, which limits adoption. LLMs show promise, but no
@@ -3562,41 +3408,6 @@
   room: Northwestern
   session: 2
   title: Fault Injection Attacks and Countermeasures on TinyML Algorithms
-- abstract: 'Modern HPC file systems can contain billions of files and hundreds of
-    petabytes of data, making even simple questions increasingly intractable to answer.
-    Traditional file system utilities such as find and du fail to scale to these sizes.
-    While external indexing tools like GUFI and Brindexer improve query performance,
-    they remain batch-oriented and unsuitable for heterogeneous, rapidly evolving
-    environments.
-
-
-    We present Icicle, a scalable framework for continuous file system metadata indexing
-    and monitoring. Icicle maintains a unified, up-to-date, and queryable view of
-    file system state while supporting both periodic snapshot-based ingestion for
-    bulk metadata updates and event-based ingestion for real-time synchronization
-    from production systems such as Lustre and IBM Storage Scale. Built on Apache
-    Kafka and Apache Flink, Icicle provides high-throughput, fault-tolerant, and horizontally
-    scalable ingestion of metadata events into two complementary search indexes, enabling
-    both individual file discovery and aggregate summary statistics by user, group,
-    and directory.
-
-
-    This architecture enables efficient support for both coarse-grained administrative
-    queries and interactive analytics over billions of objects. Our experimental evaluation
-    on production-scale HPC datasets demonstrates order-of-magnitude throughput improvements
-    over existing monitoring and indexing approaches, with tunable options for balancing
-    consistency, latency, and metadata freshness.'
-  authors: "Haochen Pan; Ryan Chard; Song Young Oh; Maxime Gonthier; Val\xE9rie Hayot-Sasson;\
-    \ Geoffrey Lentner; Joe Bottigliero; Rachana Ananthakrishnan; Kyle Chard; Ian\
-    \ Foster"
-  board_number: N21
-  institution: "University of Chicago; Argonne National Laboratory; \xC9cole de technologie\
-    \ sup\xE9rieure; Purdue University"
-  number: 127
-  room: Northwestern
-  session: 2
-  title: 'Icicle: Scalable Metadata Indexing and Real-Time Monitoring for HPC File
-    Systems'
 - abstract: "Moving Target Defense (MTD) is a proactive security paradigm designed\
     \ to increase uncertainty and complexity for attackers by constantly changing\
     \ a system\u2019s attack surface. Despite its potential, deploying MTD in complex\
