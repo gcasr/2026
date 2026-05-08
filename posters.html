@@ -1,27 +1,177 @@
 ---
-layout: twitter
+layout: page
 permalink: /posters
 title: Posters
 ---
-<p>We expect a poster program of over 80 posters chosen from about 200 submissions.</p>
+<!-- <p>We expect a poster program of over 80 posters chosen from about 200 submissions.</p> -->
 
-{% assign sessions = site.data.posters | group_by: "session" %} {% for session in sessions %}
-<div id="session-{{ session.name }}" class="row">
-  <div class="col-sm-12 col-md-12">
-    <h3 style="color: #d67a92">Session #{{ session.name }}</h3>
-  </div>
-  {% assign posters = session.items | sort: "Title" %} {% for poster in posters %}
-  <div class="col-sm-12 col-md-12" style="margin-bottom: 3em">
-    <h4>{{ poster.Title }}</h4>
-    <div>
-      <span style="font-style: italic">Authors: </span>
-      <strong>{{ poster.Authors }} </strong>
+<!--
+{% assign sessions = site.data.posters | group_by: "session" %} 
+{% for session in sessions %}
+  <div id="session-{{ session.name }}" class="row">
+    <div class="col-sm-12 col-md-12">
+      <h3 style="color: purple">Session #{{ session.name }}</h3>
     </div>
-    <div>
-      <span style="font-style: italic">Institution: </span>
-      {{ poster.Institution }}
-    </div>
-  </div>
-  {% endfor %}
-</div>
+
+    {% assign posters = session.items | sort: "room" %}
+    {% for poster in posters %}
+      <div class="col-sm-12 col-md-12" style="margin-bottom: 3em">
+        <h4>{{ poster.title }}</h4>
+        <div>
+          <span style="font-style: italic">Authors: </span>
+          <strong>{{ poster.authors }} </strong>
+        </div>
+        <div>
+          <span style="font-style: italic">Institution(s): </span>
+          {{ poster.institution }}
+        </div>
+        <div>
+          <span style="font-style: italic">Room: </span>
+          <span style="color: purple; font-weight: bold;">{{ poster.room }}</span>
+        </div>
+      </div>
+    {% endfor %}
+
 {% endfor %}
+-->
+
+
+
+
+
+<style>
+  @media (max-width: 767px) {
+    #poster-nav {
+      position: fixed;
+      top: 50px; /* Bootstrap 3 navbar height */
+      /* top: 0; */
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 0.5em 1em;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    #poster-nav ul {
+      display: inline-flex;
+      flex-direction: row;
+      gap: 1em;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #poster-nav ul ul {
+      display: inline-flex;
+      flex-direction: row;
+      gap: 0.5em;
+      padding: 0;
+      margin: 0;
+    }
+
+    #poster-nav li {
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    #poster-content {
+      padding-top: 7em; /* increase to account for both navbars */
+    }
+  }
+</style>
+
+<div class="row">
+
+  <!-- Sidebar / Mobile top nav -->
+  <div class="col-sm-3 col-md-2 col-lg-2" id="poster-nav">
+    <div class="affix hidden-xs" style="padding-top: 1em;">
+      {% assign sessions = site.data.posters | group_by: "session" %}
+      <ul class="nav nav-stacked" style="list-style: none; padding-left: 0;">
+        {% for session in sessions %}
+          <li style="font-weight: bold;">
+            <a href="#session-{{ session.name }}">Session #{{ session.name }}</a>
+          </li>
+          {% assign by_room = session.items | map: "room" | uniq | sort %}
+          <ul style="list-style: none; padding-left: 1em;">
+            {% for room in by_room %}
+              <li>
+                <a href="#session-{{ session.name }}-room-{{ room }}">{{ room }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- Mobile nav (flat, horizontal) -->
+    <div class="visible-xs-block">
+      {% assign sessions = site.data.posters | group_by: "session" %}
+      <ul>
+        {% for session in sessions %}
+          <li style="font-weight: bold;">
+            <a href="#session-{{ session.name }}">S{{ session.name }}:</a>
+          </li>
+          {% assign by_room = session.items | map: "room" | uniq | sort %}
+          <ul>
+            {% for room in by_room %}
+              <li>
+                <a href="#session-{{ session.name }}-room-{{ room }}">{{ room }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="col-sm-9 col-md-10 col-lg-10" id="poster-content">
+    {% assign sessions = site.data.posters | group_by: "session" %}
+    {% for session in sessions %}
+      <div id="session-{{ session.name }}" class="row" style="padding: 1em;">
+        <div class="col-sm-12 col-md-12">
+          <h3 style="color: purple">Session #{{ session.name }}</h3>
+        </div>
+
+        {% assign by_room = session.items | group_by: "room" %}
+        {% for group in by_room %}
+          <div class="col-sm-12 col-md-12">
+            <h3 id="session-{{ session.name }}-room-{{ group.name }}"
+                style="color: purple; font-weight: bold;">
+              Room: {{ group.name }}
+            </h4>
+          </div>
+
+          {% for poster in group.items %}
+            <div class="col-sm-12 col-md-12" style="margin-bottom: 3em">
+              <h4>{{ poster.title }}</h4>
+              <div>
+                <span style="font-style: italic">Authors: </span>
+                <strong>{{ poster.authors }}</strong>
+              </div>
+              <div>
+                <span style="font-style: italic">Institution(s): </span>
+                {{ poster.institution }}
+              </div>
+              <div>
+                <span style="font-style: italic">Room: </span>
+                <span style="color: purple; font-weight: bold;">{{ poster.room }}</span>
+              </div>
+              <div>
+                <span style="font-style: italic">Board #: </span>
+                <span style="color: purple; font-weight: bold;">{{ poster.board_number }}</span>
+              </div>
+            </div>
+            {% unless forloop.last %}<hr/>{% endunless %}
+          {% endfor %}
+          {% unless forloop.last %}<hr/>{% endunless %}
+        {% endfor %}
+
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
