@@ -20,5 +20,3 @@ More detailed information about parking and visiting Northwestern by public tran
 
 <img src="images/gcasr-campus-map.jpg" class="img-responsive">
 
-
-

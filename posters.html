@@ -164,7 +164,35 @@ title: Posters
                 <span style="font-style: italic">Board #: </span>
                 <span style="color: purple; font-weight: bold;">{{ poster.board_number }}</span>
               </div>
+
+               <!-- Trigger -->
+              {% assign style = "padding: 1em; border-style: dashed; border-width: 1px; border-color: #333333; border-radius: 15px; margin-top: 1em;" %}
+
+              {% assign abstractTarget = "poster-" | append: poster.number %}
+              {% assign bioTarget = "bio-" | append: poster.number %}
+              
+              <div style="margin-top: 1em">
+                <button data-toggle="collapse" data-target="#{{ abstractTarget }}">Abstract</button>
+                <button data-toggle="collapse" data-target="#{{ bioTarget }}">Bios</button>
+              </div>
+                  
+              <!-- Collapsible content -->
+              <div id="{{ abstractTarget }}" class="collapse" style="{{ style }}">
+                <b>Abstract:</b>
+                {{ poster.abstract }}
+              </div>
+
+              <div id="{{ bioTarget }}" class="collapse" style="{{ style }}">
+                <b>Author Bios:</b>
+                <br>
+                {{ poster.short_bio }}
+              </div>
+
             </div>
+
+           
+
+
             {% unless forloop.last %}<hr/>{% endunless %}
           {% endfor %}
           {% unless forloop.last %}<hr/>{% endunless %}
