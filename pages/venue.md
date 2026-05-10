@@ -14,7 +14,11 @@ Northwestern can be easily accessed by the following public transit options:
 More detailed information about parking and visiting Northwestern by public transport is available at [https://www.northwestern.edu/admissions/visiting-campus/maps-parking.html](https://www.northwestern.edu/admissions/visiting-campus/maps-parking.html) and [https://www.northwestern.edu/transportation-parking/evanston-parking/permit-types/visitor.html](https://www.northwestern.edu/transportation-parking/evanston-parking/permit-types/visitor.html).
 
 
-<img src="images/floorplan.png" class="img-responsive">
+<!-- <img src="images/floorplan.png" class="img-responsive"> -->
+
+<img src="images/gcasr-floorplan.jpg" class="img-responsive">
+
+<img src="images/gcasr-campus-map.jpg" class="img-responsive">
 
 
 
