@@ -129,6 +129,13 @@ title: Posters
 
   <!-- Main content -->
   <div class="col-sm-9 col-md-10 col-lg-10" id="poster-content">
+
+    <!-- <button data-toggle="collapse" data-target="abstract-expand-all">Expand/Collapse All Abstract</button>
+    <button data-toggle="collapse" id="bio-expand-all" data-target="bio-expand-all">Expand/Collapse All Bios</button> -->
+
+    <button id="abstract-expand-all">Expand All Abstracts</button>
+    <button id="bio-expand-all">Expand All Bios</button>
+
     {% assign sessions = site.data.posters | group_by: "session" %}
     {% for session in sessions %}
       <div id="session-{{ session.name }}" class="row" style="padding: 1em;">
@@ -164,32 +171,38 @@ title: Posters
                 <span style="font-style: italic">Board #: </span>
                 <span style="color: purple; font-weight: bold;">{{ poster.board_number }}</span>
               </div>
+
               <div>
                 <span style="font-style: italic">Session #: </span>
                 <span style="color: purple; font-weight: bold;">{{ poster.session }}</span>
               </div>
+
+               <!-- Trigger -->
+              {% assign style = "padding: 1em; border-style: dashed; border-width: 1px; border-color: #333333; border-radius: 15px; margin-top: 1em;" %}
+
+              {% assign abstractTarget = "poster-" | append: poster.number %}
+              {% assign bioTarget = "bio-" | append: poster.number %}
+              
+              <div style="margin-top: 1em">
+                <button data-toggle="collapse" data-target="#{{ abstractTarget }}">Abstract</button>
+                <button data-toggle="collapse" data-target="#{{ bioTarget }}">Bios</button>
+              </div>
+                  
+              <!-- Collapsible content -->
+              <div id="{{ abstractTarget }}" class="collapse" style="{{ style }}">
+                <b>Abstract:</b>
+                {{ poster.abstract }}
+              </div>
+
+              <div id="{{ bioTarget }}" class="collapse" style="{{ style }}">
+                <b>Author Bios:</b>
+                <br>
+                {{ poster.short_bio }}
+              </div>
+
             </div>
 
-            <!-- Trigger -->
-            {% assign style = "padding: 1em; border-style: dashed; border-width: 1px; border-color: #333333; border-radius: 15px; margin-top: 1em;" %}
-
-            {% assign abstractTarget = "poster-" | append: poster.number %}
-            <button data-toggle="collapse" data-target="#{{ abstractTarget }}">Abstract</button>
-
-            {% assign bioTarget = "bio-" | append: poster.number %}
-            <button data-toggle="collapse" data-target="#{{ bioTarget }}">Bios</button>
-
-            <!-- Collapsible content -->
-            <div id="{{ abstractTarget }}" class="collapse" style="{{ style }}">
-              <b>Abstract:</b>
-              {{ poster.abstract }}
-            </div>
-
-            <div id="{{ bioTarget }}" class="collapse" style="{{ style }}">
-              <b>Author Bios:</b>
-              <br>
-              {{}}
-            </div>
+           
 
 
             {% unless forloop.last %}<hr/>{% endunless %}
@@ -202,3 +215,47 @@ title: Posters
   </div>
 
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+    document.getElementById('bio-expand-all').addEventListener('click', function() {
+      var bioEls = document.querySelectorAll('.collapse[id^="bio-"]');
+      var anyOpen = Array.from(bioEls).some(function(el) {
+        return el.classList.contains('in');
+      });
+
+      bioEls.forEach(function(el) {
+        if (anyOpen) {
+          el.classList.remove('in');
+          el.style.height = '0';
+        } else {
+          el.classList.add('in');
+          el.style.height = 'auto';
+        }
+      });
+
+      this.textContent = anyOpen ? 'Expand All Bios' : 'Collapse All Bios';
+    });
+
+    document.getElementById('abstract-expand-all').addEventListener('click', function() {
+      var abstractEls = document.querySelectorAll('.collapse[id^="poster-"]');
+      var anyOpen = Array.from(abstractEls).some(function(el) {
+        return el.classList.contains('in');
+      });
+
+      abstractEls.forEach(function(el) {
+        if (anyOpen) {
+          el.classList.remove('in');
+          el.style.height = '0';
+        } else {
+          el.classList.add('in');
+          el.style.height = 'auto';
+        }
+      });
+
+      this.textContent = anyOpen ? 'Expand All Abstracts' : 'Collapse All Abstracts';
+    });
+
+  });
+</script>
