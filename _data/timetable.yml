@@ -49,20 +49,6 @@
     isKeynote: false
 
 -   time: 1:05 PM - 1:25 PM
-    speaker: Kexin Pei
-    web: https://sites.google.com/site/kexinpeisite/
-    img: pei.jpg
-    bio: |
-        Kexin Pei is a Neubauer Family Assistant Professor at the Department of Computer Science, The University of Chicago. He received my PhD at Department of Computer Science, Columbia University. He is broadly interested in Security, Software Engineering, and Machine Learning, with a focus on automated code reasoning to improve the security and reliability of software systems. He gets most excited about developing intelligent systems that understand code semantics and can precisely reason about program behaviors, allowing them to reliably and efficiently analyze, detect, and fix software bugs and vulnerabilities.
-    description: Synthesizing Fine-grained State Checks for Curriculum Fuzzing
-    abstract: |
-      Fuzzing enables many security applications, such as detecting vulnerabilities, confirming vulnerabilities by generating exploits, debugging system crashes and performance issues, and validating patches. While fuzzing essentially features a brute-force search, most research focuses on code reasoning to develop additional feedback that makes the search more efficient. For example, a typical feedback is code coverage, which serves as a proxy to measure progress towards reaching potential bugs, while being very easy to analyze and collect. However, such guidance is sometimes too sparse or indirect to reliably measure progress, especially when a long chain of implicit preconditions guards the specific bug. In contrast, more sophisticated feedbacks are often tailored for specific bug types and thus might not generalize to diverse bug types and programs.
-
-      <p>In this talk, I'll introduce our recent effort in building a code agent to reason about semantically meaningful progress-capturing predicates as fine-grained, curriculum feedback to improve fuzzing efficiency. These predicates, inserted as source-level instrumentation into the program, provide semantically meaningful checkpoints that both prune unpromising executions and reward incremental progress. By shifting the LLM’s role from end-to-end input-level generation to local predicate synthesis, we reduce the long-range reasoning burden on the model, while enabling verifiable predicate synthesis via symbolic execution. We show that our system, Locus, substantially improves the efficiency of eight state-of-the-art fuzzers, achieving up to 41.6× speedup in reaching target sites and discovering new previously unknown bugs. We also demonstrate that the same philosophy can facilitate the synthesis of performance-stressing predicates, enabling efficient performance testing.</p>
-    affiliation: UChicago
-    isKeynote: false
-
--   time: 1:25 PM - 1:45 PM
     description: Scalable Video Conferencing using SDN Principles
     speaker: Oliver Michel
     web: https://olivermichel.github.io
@@ -74,7 +60,7 @@
     affiliation: Illinois Tech
     isKeynote: false
 
--   time: 1:45 PM - 2:05 PM
+-   time: 1:25 PM - 1:45 PM
     description: Improving Confidence in Static Analysis Tools via Metamorphic Testing
     speaker: Austin Mordahl
     affiliation: UIC
@@ -86,7 +72,7 @@
       Austin Mordahl is an Assistant Professor at the University of Illinois Chicago as of November 2024. His research interests are in software testing and program analysis. He has focused on transforming software quality assurance (SQA) processes (such as fuzzing and static analysis) to make them more accurate and accessible. His work has applied approaches like testing, static analysis, and machine learning towards this goal.
     isKeynote: false
 
--   time: 2:05PM - 2:25 PM
+-   time: 1:45PM - 2:05 PM
     description: TBD
     speaker: Mohammed Abuhamad
     affiliation: Loyola
@@ -97,19 +83,20 @@
         Dr. Mohammed Abuhamad is an Assistant Professor in the Department of Computer Science at Loyola University Chicago. He is the director and founder of the AI for Secure Computing Research Lab (AISeC) and serves as a faculty member in multiple labs, including Cybersecurity Lab and Software and Systems Lab. Dr. Abuhamad’s research focuses on AI system security, information security and privacy, responsible AI, and data analytics. He holds two Ph.D. degrees in Computer Science from the University of Central Florida and in Electrical and Computer Engineering from INHA University, South Korea. His work has been published in top-tier journals and conferences, and he is an active reviewer and committee member for several prestigious journals and conferences.
     isKeynote: false
 
--   time: 2:25 PM - 2:45 PM
-    description: Reliability-Aware Design and Optimization of Quantum Circuits on NISQ Devices
-    speaker: Jindi Wu
-    web: https://jindi0.github.io/
-    img: wu.jpeg
-    bio: |
-        Jindi Wu is an Assistant Professor in the School of Computing at DePaul University. Her research focuses on quantum computing and its intersections with machine learning, security, and privacy, with particular emphasis on quantum machine learning, error modeling and mitigation, circuit compilation, and quantum networks.
-    abstract: |
-        Noisy Intermediate-Scale Quantum (NISQ) devices pose significant challenges for reliable quantum computation, making it difficult to design circuits that perform well under realistic noise and hardware constraints. A key limitation is the lack of efficient, accurate, and interpretable methods for estimating circuit reliability without relying on costly quantum execution. This talk presents a lightweight and scalable framework for reliability estimation in noisy quantum circuits. The approach models how noise accumulates and propagates throughout circuit execution, enabling efficient, state-independent evaluation of circuit robustness. Building on this capability, the talk highlights how reliability estimation can guide two important tasks. First, in quantum ansatz design, reliability-aware evaluation helps identify circuit structures that are more robust on noisy quantum hardware. Second, in circuit compilation and optimization, the framework enables more informed transformations that mitigate the impact of noise during execution.
-    affiliation: DePaul
+-   time: 2:05 PM - 2:35 PM
+    description: TBD
+    speaker: Andy Pavlo
+    affiliation: Carnegie Mellon University
     isKeynote: false
+    bio: |
+        Andy Pavlo is an Associate Professor with Indefinite Tenure of Databaseology in the Computer Science Department at Carnegie Mellon University. He was the co-founder of the OtterTune start-up and record label, but then it died. He is currently the co-founder of "SO-YOU-DONT-HAVE-TO INCORPORATED'); DROP TABLE companies; --". His goal is to achieve a database-centric lifestyle.
+    description: "Databases: The Final Boss of Agents"
+    abstract: |
+        Large language models (LLMs) are evolving into autonomous agents that can reason, plan, and act over complex systems. We contend that databases pose the hardest and most important challenge for agents, due to their unforgiving correctness and performance requirements. This talk presents research on using agents for databases in two ways. The first part focuses on tuning agents that automatically optimize database configurations, including physical design (e.g., indexes), system knobs, and query execution strategies. The second part shifts to coding agents as collaborators in building database systems themselves. As part of this talk, we will discuss our successes and failures in using agents across both efforts and what is needed to automate them further.
+    img: pavlo.jpg
+    web: https://www.cs.cmu.edu/~pavlo/
 
--   time: 2:45 PM - 3:00 PM
+-   time: 2:35 PM - 3:00 PM
     description: |
       <b>Break</b>
       <br/>
@@ -168,20 +155,33 @@
     affiliation: Hudson River Trading
     isKeynote: false
 
--   time: 4:40 PM - 5:10 PM
-    description: TBD
-    speaker: Andy Pavlo
-    affiliation: Carnegie Mellon University
-    isKeynote: false
+-   time: 4:40 PM - 5:00 PM
+    speaker: Kexin Pei
+    web: https://sites.google.com/site/kexinpeisite/
+    img: pei.jpg
     bio: |
-        Andy Pavlo is an Associate Professor with Indefinite Tenure of Databaseology in the Computer Science Department at Carnegie Mellon University. He was the co-founder of the OtterTune start-up and record label, but then it died. He is currently the co-founder of "SO-YOU-DONT-HAVE-TO INCORPORATED'); DROP TABLE companies; --". His goal is to achieve a database-centric lifestyle.
-    description: "Databases: The Final Boss of Agents"
+        Kexin Pei is a Neubauer Family Assistant Professor at the Department of Computer Science, The University of Chicago. He received my PhD at Department of Computer Science, Columbia University. He is broadly interested in Security, Software Engineering, and Machine Learning, with a focus on automated code reasoning to improve the security and reliability of software systems. He gets most excited about developing intelligent systems that understand code semantics and can precisely reason about program behaviors, allowing them to reliably and efficiently analyze, detect, and fix software bugs and vulnerabilities.
+    description: Synthesizing Fine-grained State Checks for Curriculum Fuzzing
     abstract: |
-        Large language models (LLMs) are evolving into autonomous agents that can reason, plan, and act over complex systems. We contend that databases pose the hardest and most important challenge for agents, due to their unforgiving correctness and performance requirements. This talk presents research on using agents for databases in two ways. The first part focuses on tuning agents that automatically optimize database configurations, including physical design (e.g., indexes), system knobs, and query execution strategies. The second part shifts to coding agents as collaborators in building database systems themselves. As part of this talk, we will discuss our successes and failures in using agents across both efforts and what is needed to automate them further.
-    img: pavlo.jpg
-    web: https://www.cs.cmu.edu/~pavlo/
+      Fuzzing enables many security applications, such as detecting vulnerabilities, confirming vulnerabilities by generating exploits, debugging system crashes and performance issues, and validating patches. While fuzzing essentially features a brute-force search, most research focuses on code reasoning to develop additional feedback that makes the search more efficient. For example, a typical feedback is code coverage, which serves as a proxy to measure progress towards reaching potential bugs, while being very easy to analyze and collect. However, such guidance is sometimes too sparse or indirect to reliably measure progress, especially when a long chain of implicit preconditions guards the specific bug. In contrast, more sophisticated feedbacks are often tailored for specific bug types and thus might not generalize to diverse bug types and programs.
 
--   time: 5:10 PM - 5:40 PM
+      <p>In this talk, I'll introduce our recent effort in building a code agent to reason about semantically meaningful progress-capturing predicates as fine-grained, curriculum feedback to improve fuzzing efficiency. These predicates, inserted as source-level instrumentation into the program, provide semantically meaningful checkpoints that both prune unpromising executions and reward incremental progress. By shifting the LLM’s role from end-to-end input-level generation to local predicate synthesis, we reduce the long-range reasoning burden on the model, while enabling verifiable predicate synthesis via symbolic execution. We show that our system, Locus, substantially improves the efficiency of eight state-of-the-art fuzzers, achieving up to 41.6× speedup in reaching target sites and discovering new previously unknown bugs. We also demonstrate that the same philosophy can facilitate the synthesis of performance-stressing predicates, enabling efficient performance testing.</p>
+    affiliation: UChicago
+    isKeynote: false
+
+-   time: 5:00 PM - 5:20 PM
+    description: Reliability-Aware Design and Optimization of Quantum Circuits on NISQ Devices
+    speaker: Jindi Wu
+    web: https://jindi0.github.io/
+    img: wu.jpeg
+    bio: |
+        Jindi Wu is an Assistant Professor in the School of Computing at DePaul University. Her research focuses on quantum computing and its intersections with machine learning, security, and privacy, with particular emphasis on quantum machine learning, error modeling and mitigation, circuit compilation, and quantum networks.
+    abstract: |
+        Noisy Intermediate-Scale Quantum (NISQ) devices pose significant challenges for reliable quantum computation, making it difficult to design circuits that perform well under realistic noise and hardware constraints. A key limitation is the lack of efficient, accurate, and interpretable methods for estimating circuit reliability without relying on costly quantum execution. This talk presents a lightweight and scalable framework for reliability estimation in noisy quantum circuits. The approach models how noise accumulates and propagates throughout circuit execution, enabling efficient, state-independent evaluation of circuit robustness. Building on this capability, the talk highlights how reliability estimation can guide two important tasks. First, in quantum ansatz design, reliability-aware evaluation helps identify circuit structures that are more robust on noisy quantum hardware. Second, in circuit compilation and optimization, the framework enables more informed transformations that mitigate the impact of noise during execution.
+    affiliation: DePaul
+    isKeynote: false
+
+-   time: 5:20 PM - 5:50 PM
     description: "UpDown: Breaking through the ceiling on Graph Computing Performance"
     speaker: Andrew Chien
     bio: |
@@ -197,7 +197,7 @@
     web: http://people.cs.uchicago.edu/~aachien/lssg/people/andrew-chien/
     isKeynote: false
 
--   time: 5:40 PM - 6:10 PM
+-   time: 5:50 PM - 6:20 PM
     speaker: Bill Gropp
     description: Performance Engineering for Parallel Systems
     abstract: |
@@ -209,7 +209,7 @@
     img: gropp.jpg
     isKeynote: false
 
--   time: 6:10 - 6:20 PM
+-   time: 6:20 - 6:30 PM
     description: Closing Remarks
     speaker: ""
     affiliation: ""
